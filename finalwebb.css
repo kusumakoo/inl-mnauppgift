@@ -1,0 +1,474 @@
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    margin:0;
+    background-color:rgb(91, 201, 201);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(58, 35, 99);
+    
+    
+}
+.header{
+    display:flex;   
+     
+}
+/*fix menu*/
+.Nav {
+    position:fixed;
+    top:0;
+    width:100%;
+    
+}
+
+/*navbar icon*/
+.Nav ul{
+    display:flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+.Nav nav #icon{
+    
+    padding:1em;
+}
+.Nav nav #icon span{
+    display:block;
+    color:whitesmoke;
+    /*color:rgb(5, 5, 100);*/
+
+}
+.Nav nav #icon a{
+    text-decoration: none;
+}
+.Nav nav #icon a:hover{
+    color:rgb(9, 236, 149);
+}
+.Nav nav #icon a span:hover{
+    color:rgb(9, 236, 149);
+}
+/*section1*/
+#section1{
+    display:flex;
+    height:900px;
+    text-align: center;
+    
+    
+}
+#section1 .foto{
+    
+    height:auto;
+    width:100%;
+    background-image: url("foto2.jpg");
+    color:rgb(244, 248, 248);
+    background-repeat: no-repeat;
+      
+    
+}
+#section1 .foto h1{
+    text-shadow:5px 5px 8px #11116d;
+    font-size: 80px;
+    margin-top: 300px;
+    
+}
+#section1 .foto h2{
+    text-shadow:5px 5px 8px #11116d;
+    font-size: 50px;
+    
+    
+}
+/*section2*/
+#section2{
+    display:flex;
+    justify-content: center;
+    min-height:800px;
+
+    
+}
+#section2 .MyStory{
+    margin-top: 200px;
+    width:45%;
+    padding:10px;
+    text-align: center;
+    height: auto;
+    
+
+}
+#section2 .MyStory h2{
+    font-size: 50px;
+    text-align: center;
+    
+      
+    
+}
+#section2 .MyStory p{
+    font-size:30px;
+    margin-top: 0;
+    text-align: center;
+    
+}
+
+#section2 .fotoBox1
+{
+    margin-top: 300px;
+    display:block;
+    height:auto;
+    width:40%;
+   
+  
+}
+#section2 .fotoBox1 img{
+    width: 60%;
+    height:auto;
+    display:block;
+    margin:0 auto;
+
+}
+/*section3*/
+#section3{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height:900px;
+}
+#section3 .Program{
+    height:auto;
+    width:50%;
+}
+#section3 .fotoBox2,
+#section3 .fotoBox3{
+    
+    height:auto;
+    width:25%;
+ 
+}
+
+#section3 .fotoBox2 img,
+#section3 .fotoBox3 img{
+    width: 60%;
+    height:auto;
+    display:block;
+    margin:0 auto;
+}
+#section3 .fotoBox2{
+    order:1;
+}
+#section3 .Program{
+    order:2;  
+}
+#section3 .fotoBox3{
+    order:3;
+}
+#section3 .Program h2{
+    margin:0;
+    font-size: 50px;
+    text-align: center;
+ 
+}
+#section3 .Program p{
+    font-size: 30px;   
+}
+
+
+#section3 .fotoBox3 img,
+#section3 .fotoBox2 img{
+    height:50%;
+    width:auto;
+}
+/*section4*/
+#section4{
+    display:flex;
+    min-height:800px;
+}
+#section4 .fotoBox4
+{   
+    display:block;
+    margin-top:200px;
+    height:800px;
+    width:45%;
+    align-items: center;
+    justify-content: center;
+    order:1;
+}
+#section4 .fotoBox4 img{
+    width:70%;
+    height:auto;
+    margin-top:100px;
+    display:block;
+}
+#section4 .contact{
+
+    margin-top:300px;
+    display:block;
+    order:2;
+    flex-basis: 40%;
+    min-height:800px;
+    font-size: 30px;
+
+    
+}
+
+
+/*footer*/
+.footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:4px;
+    padding:1.3px;
+    background-color: rgb(79, 111, 182);
+    color:blue;
+    width:100%;
+    
+}
+/*screen size reponsive*/
+@media(max-width:1080px){
+    #section1 .foto{
+        background-image: url("foto2.jpg");
+    }
+    #section1 .foto{
+        height:900px;
+    }
+    #section1 .foto h1{
+        font-size: 60px;
+    }
+    #section1 .foto h2{
+        font-size:40px;
+    }
+    #section2 .MyStory{
+       
+        text-align: center;
+        min-height: 500px;
+        flex:2;
+    }
+    #section2 .fotoBox1{
+        flex:1;
+    }
+    #section2 .MyStory h2,
+    #section3 .Program h2,
+    #section4 .contact h2{
+        font-size: 40px;
+    }
+    #section2 .MyStory p,
+    #section3 .Program p{
+        font-size:25px;
+        
+    }
+    
+    #section2 .fotoBox1,     
+    #section3 .fotoBox2,
+    #section4 .fotoBox4  {
+        
+        min-height:500px;  
+    }
+    #section2 .fotoBox1 img,
+    #section3 .fotoBox2 img,
+    #section4 .fotoBox4 img{
+        height:auto;
+        width:60%;
+    }
+    #section3 .fotoBox3 img{
+        display:none;
+    }
+
+    #section3 .Program{
+        align-items: center;
+        min-height: 500px;
+    }
+    #section3 .fotoBox2{
+        flex:1;
+
+    }
+    #section3 .Program{
+        flex:2;
+
+    }
+    #section3 .fotoBox3{
+        flex:0;
+
+    }
+    #section4 {
+        min-height: 500px;
+        margin-bottom: 100px;
+    }   
+    
+    #section4 .fotoBox4{
+        flex-basis: 40%;
+        min-height: 500px;
+               
+    }
+    #section4 .contact{
+        
+        flex-basis: 40%;
+        min-height:500px;
+        font-size: 25px;
+    }
+
+}
+
+
+
+@media(max-width:768px){
+    #section1 .foto{
+        background-image: url("foto2.jpg");
+    }
+    #section1 .foto{
+        height:900px;
+    }
+    #section1 .foto h1{
+        font-size: 50px;
+    }
+    #section1 .foto h2{
+        font-size:30px;
+    }
+    #section2 .MyStory{
+        text-align: center;
+        min-height: 500px;
+    }
+    #section2 .MyStory h2,
+    #section3 .Program h2,
+    #section4 .contact h2{
+        font-size: 30px;
+        
+    }
+    
+    #section2 .MyStory p,
+    #section3 .Program p{
+        font-size:25px;
+        
+        
+    }
+    
+    #section2 .fotoBox1,     
+    #section3 .fotoBox2,
+    #section3 .fotoBox3,
+    #section4 .fotoBox4  {
+        
+        min-height:500px;  
+    }
+    #section2 .fotoBox1 img,
+    #section3 .fotoBox2 img,
+    #section4 .fotoBox4 img{
+        height:auto;
+        width:70%;
+    }
+   
+    #section3 .Program{
+        align-items: center;
+        min-height: 500px;
+        
+    }
+    #section3 .fotoBox3 img{
+        display:none;
+    }
+
+    #section3 .Program{
+        align-items: center;
+        min-height: 500px;
+    }
+    #section3 .fotoBox2{
+        flex:1;
+        margin-top: 200px;
+        
+
+    }
+    #section3 .Program{
+        flex:2;
+
+    }
+    #section3 .fotoBox3{
+        flex:0;
+
+    }
+    #section4 .fotoBox4{
+        width: 40%;
+        min-height: 500px;
+        margin-top: 200px;
+    
+    }
+    #section4 .contact{
+       
+        flex-basis: 50%;
+        min-height:500px;
+        font-size: 25px;
+    }
+
+}
+
+
+@media(max-width:468px){
+    #section1 {
+        min-height: 300px;
+    }
+    #section1 .foto{
+        background-image: none;
+       
+    }
+    #section1 .foto h1{
+        font-size: 40px;
+    }
+    #section1 .foto h2{
+        font-size: 25px;
+    }
+
+   
+    #section2 .MyStory{
+        
+        background-color: rgb(177, 118, 233);
+        min-height: 900px;
+        padding:20px 20px;
+        width:100%;
+        margin-top: 0;
+    }
+    #section2 .MyStory h2{
+        margin-top:150px;
+    }
+    #section2 .MyStory h2,
+    #section3 .Program h2,
+    #section4 .contact h2{
+        font-size: 25px;
+    
+    }
+    #section2 .MyStory p,
+    #section3 .Program p{
+        font-size:25px;
+        
+    }
+    
+    #section2 .fotoBox1,     
+    #section3 .fotoBox2,
+    #section3 .fotoBox3,
+    #section4 .fotoBox4  {
+        display:none;
+        
+        
+    }
+    #section3 .Program h2{
+        margin-top:120px;
+    }
+    #section3 .Program{
+        
+        text-align: center;
+        background-color: rgb(175, 189, 57);
+        min-height: 900px;
+        padding:20px 20px;
+        width:100%;
+    }
+    
+    #section4 .contact h2{
+        margin-top:200px;
+        text-align: center;
+    }
+   
+     #section4 .contact{
+        text-align: center;
+        margin-top:0;
+        background-color: rgb(224, 178, 200);
+        flex-basis: 100%;
+        min-height:900px;
+        font-size: 25px;
+        
+    }
+
+
+
+}
